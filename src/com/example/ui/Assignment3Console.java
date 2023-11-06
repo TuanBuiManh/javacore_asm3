@@ -160,6 +160,7 @@ public class Assignment3Console {
     private void getEmployeeById() {
         System.out.println("Enter ID of employee");
         int empID = readInt(0, Integer.MAX_VALUE);
+        System.out.println("ID\tFistName\tLastName\tSalary");
         Employee employee = employeeService.getEmployeeById(empID);
         System.out.println(employee.getEmpID() + "\t" + employee.getFirstName() + "\t"
                 + employee.getLastName() + "\t" + employee.getSalary());
